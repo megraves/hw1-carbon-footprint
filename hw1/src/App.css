@@ -2,41 +2,88 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  /* color-scheme: light dark;  light/dark mode depending on user settings -- customizable UI */
+  
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.layout {
+  display: flex;
+  padding: 2rem;
+  margin: 20px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.page {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: left;
+  border-radius: 10px;
+  width: 95%;
+  padding: 20px;
+  height: 2070px;
+  flex-flow: row wrap;
 }
 
 .card {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  width: 250px;
+  height: 500px;
   padding: 2em;
+  flex-flow: row wrap;
+  box-shadow: 8px 8px 8px rgb(36, 35, 35);
+}
+
+.card.dark {
+  background-color: rgb(40, 59, 50);
+  box-shadow: 8px 8px 8px black;
+}
+
+.card * {
+  color: black;
+  width: 200px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: row wrap;
+}
+
+.card p {
+  font-family: Georgia, serif;
+  color: #304e39b2;
+  font-weight: bolder;
+  font-size: 18px;
+
+}
+
+p {
+  font-family: Georgia, serif;
+  color: #304e39b2;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.card.dark p {
+  color: white;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  background-color: transparent;
+  font-size: 30px;
+  border-color: transparent;
 }
 
 .read-the-docs {
-  color: #888;
+  color: #888888;
 }
